@@ -30,7 +30,7 @@ class BitDecoder {
   }
 
   private fun readFrameBytes(audioStream: AudioInputStream, frameSize: Int): ByteArray {
-    val byteArray = ByteArray(frameSize) //  1 64
+    val byteArray = ByteArray(frameSize)
     audioStream.read(byteArray)
     return byteArray
   }
